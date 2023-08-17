@@ -1,0 +1,239 @@
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: #000000;
+        background-color: #f8f8ff;
+        margin: 0%;
+    }
+    
+    h1 {
+        font-size: 200%;
+    }
+    
+    h2 {
+        font-size: 180%;
+    }
+    
+    h3 {
+        font-size: 160%;
+    }
+    
+    h4 {
+        font-size: 140%;
+    }
+    
+    h5 {
+        font-size: 120%;
+    }
+    
+    h6 {
+        font-size: 100%;
+    }
+    
+    nav a {
+        font-size: 90%;
+    }
+    
+    #carouselBanner {
+        margin-top: 5%;
+    }
+    
+    #carouselBanner img{
+    	height: 300px;
+    	object-fit: cover;
+    }
+    
+    .h1 {
+        color: #f8f8ff;
+        position: absolute;
+        font-size: 300%;
+        left: 10%;
+        top: 22%;
+    }
+    #menu nav ul.navbar-nav li a:hover{
+    	color: gold;
+    }
+    
+    #container-sanbong {
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    #container-sanbong .btn-success {
+    	font-size: 20px;
+    	padding: 10px;
+    }
+    
+    #container-sanbong main,
+    #container-sanbong aside {
+        border: 1px outset grey;
+        border-radius: 5px;
+        box-shadow: 1px 1px grey;
+        padding: 1%;
+    }
+    
+    #confirm input.btn-success, #confirm input.btn-secondary {
+    	font-size: 20px;
+    	padding: 5px;
+    }
+    
+    .about {
+        border: 1px outset grey;
+        /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px; */
+        border-radius: 5px;
+        box-shadow: 1px 1px grey;
+        padding: 10px;
+    }
+    
+    #container-sanbong img,
+    .about img {
+        width: 100%;
+    }
+    
+    .container-fluid a {
+        color: #0000ff;
+    }
+    
+    #formdatsan {
+        box-sizing: border-box;
+        font-size: 120%;
+        width: 100%;
+        border: 1px outset grey;
+        /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px; */
+        border-radius: 5px;
+        box-shadow: 1px 1px grey;
+        overflow: auto;
+    }
+    main h4 {
+    	margin-top: 1%;
+    	margin-left: 1%;
+    }
+    
+    
+    #formdatsan .btn-primary {
+    	font-size: 25px;
+    	padding: 5px;
+    }
+    
+    #tensan,
+    #diachi,
+    #lienhe {
+        background-color: #fafaff;
+        border: none;
+    }
+    
+    #khunggio,
+    #sogio,
+    #songuoichoi,
+    #sodoichoi {
+        width: 40%;
+    }
+    
+    #loitennguoidat,
+    #loisodienthoai,
+    #loikhunggio,
+    #loisogio,
+    #loisonguoichoi,
+    #loisodoichoi {
+        position: absolute;
+        font-size: 15px;
+        color: red;
+        display: none;
+    }
+    
+    .datdinhki,
+    .dichvuthem {
+        margin-left: 20%;
+    }
+    
+    footer {
+        display: inline-block;
+        background: #808080;
+        color: #f8f8ff;
+        text-align: left;
+        line-height: 30px;
+        margin-top: 2%;
+    }
+    
+    #container-footer h3 {
+        margin-top: 5%;
+    }
+    
+    #container-footer a {
+        color: #f8f8ff;
+        text-decoration: none;
+    }
+    
+    #container-footer nav ul li a:hover, #container-footer nav ul li:hover {
+    color: yellow;
+}
+    
+    footer ul {
+        list-style: none;
+    }
+    
+    footer nav li ul {
+        visibility: hidden;
+    }
+    
+    footer nav li:hover ul {
+        visibility: visible;
+    }
+    
+    footer nav ul li {
+        display: block;
+    }
+    
+    @media screen and (max-width: 768px) {
+        #carouselBanner {
+            margin-top: 18%;
+        }
+        .h1 {
+            left: 20%;
+        }
+        .hidden-sm {
+            display: none;
+        }
+        footer {
+            text-align: center;
+        }
+        #container-footer h3,
+        #container-footer h3 {
+            padding-left: 8%;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        #carouselBanner {
+            margin-top: 10%;
+        }
+        #container-footer h3,
+        #container-footer h3 {
+            padding-left: 9%;
+        }
+        #thuesanbong,
+        #thongtin {
+            padding-left: 10%;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        body {
+            font-size: 120%;
+        }
+        nav a {
+            font-size: 100%;
+        }
+        #container-footer h3,
+        #container-footer h3 {
+            padding-left: 6%;
+        }
+        #thuesanbong,
+        #thongtin {
+            padding-left: 10%;
+        }
+    }

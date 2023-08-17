@@ -1,0 +1,207 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #f8f8ff;
+    margin: 0%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+.logo {
+    padding-left: 10%;
+    float: left;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    color: #f8f8ff;
+}
+
+.menu li {
+    width: 10%;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    background: #a9a9a9;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    /* -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px; */
+    border-radius: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li:hover {
+    background-color: darkkhaki;
+}
+
+.menu li li {
+    font-size: 100%;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    width: 90%;
+    border-radius: 0;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.h1 {
+    color: #f8f8ff;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.book {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 25px;
+    border: 1px outset grey;
+    /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px; */
+    border-radius: 5px;
+    box-shadow: 1px 1px grey;
+    padding: 2%;
+    overflow: auto;
+}
+
+.form1 label,
+.form2 span {
+    float: left;
+    width: 20%;
+}
+
+.form1 input,
+.form2 label {
+    float: left;
+    width: 60%;
+}
+
+.form1 #tensan,
+#diachi,
+#lienhe {
+    background-color: #fafaff;
+    border: none;
+}
+
+.form1 #khunggio,
+#sogio,
+#songuoichoi,
+#sodoichoi {
+    width: 32%;
+}
+
+.form1 #datsan {
+    width: 8%;
+    background-color: greenyellow;
+    margin-left: 20%;
+}
+
+.form1 #loitennguoidat,
+#loisodienthoai,
+#loikhunggio,
+#loisogio,
+#loisonguoichoi,
+#loisodoichoi {
+    position: absolute;
+    font-size: 15px;
+    height: 20px;
+    width: 59%;
+    line-height: 20px;
+    color: red;
+    display: none;
+    margin-left: 19.2%;
+}
+
+.datdinhki,
+.dichvuthem {
+    margin-left: 20%;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    background: #808080;
+    color: #f8f8ff;
+    text-align: left;
+    line-height: 30px;
+}
+
+.thuesanbong {
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding-left: 150px;
+}
+
+.thuesanbong h3 {
+    padding-left: 35px;
+}
+
+footer a {
+    color: #f8f8ff;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer nav li ul {
+    visibility: hidden;
+}
+
+footer nav li:hover ul {
+    visibility: visible;
+}
