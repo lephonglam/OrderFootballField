@@ -8,13 +8,17 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 /**
- * get Connection object
+ * create object which connect to database
  * @author LE PHONG LAM
- * @return Connection
- * @throw NamingException
- * @throw SQLException
+ *
  */
 public class DBContext {
+	/**
+	 * create object which connect to database
+	 * @return Connection object
+	 * @throws NamingException
+	 * @throws SQLException
+	 */
 	public Connection getConnection() throws NamingException, SQLException {
 		InitialContext initContext = new InitialContext();
 		Context env = (Context) initContext.lookup("java:comp/env");

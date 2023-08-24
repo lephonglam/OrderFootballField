@@ -44,7 +44,7 @@ public class FieldServlet extends HttpServlet {
 			response.sendRedirect("view/book.jsp");
 		} catch (NamingException | SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			response.getWriter().println(e);
 		}
 	}
 

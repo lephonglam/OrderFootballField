@@ -50,7 +50,7 @@ public class ConfirmServlet extends HttpServlet {
 			}
 		} catch (NamingException | SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			response.getWriter().println(e);
 		}
 	}
 

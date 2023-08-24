@@ -67,7 +67,7 @@ public class OrderFieldServlet extends HttpServlet {
 			}
 		} catch (NamingException | SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			response.getWriter().println(e);
 		}
 		CustomerOrder customerOrder = new CustomerOrder(customerName, phone, numberTeam, 
 				numberPlayer, times, periodic, footballField.getId());
