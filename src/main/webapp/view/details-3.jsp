@@ -101,7 +101,7 @@
                         <li>có trọng tài (220k/giờ)</li>
                     </ol>
                     <p><b>Liên hệ:</b> <a href="tel:+84904795885">090.479.5885</a></p>
-                    <p><b>Giá thuê sân 7 người:</b></p>
+                    <p><b>Giá thuê sân:</b></p>
                     <ul>
                         <li><time>06:00</time> - <time>16:00</time>: 400k/h</li>
                         <li><time>16:00</time> - <time>17:30</time>: 600k/h</li>

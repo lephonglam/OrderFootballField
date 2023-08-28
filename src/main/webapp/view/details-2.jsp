@@ -101,7 +101,7 @@
                         <li>có trọng tài (210k/giờ)</li>
                     </ol>
                     <p><b>Liên hệ:</b> <a href="tel:+84858658899">085.865.8899</a></p>
-                    <p><b>Giá thuê sân 7 người:</b></p>
+                    <p><b>Giá thuê sân:</b></p>
                     <ul>
                         <li><time>06:00</time> - <time>16:00</time>: 450k/h</li>
                         <li><time>16:00</time> - <time>17:30</time>: 500k/h</li>
