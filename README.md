@@ -1,93 +1,30 @@
-# Trang web Thuê Sân Bóng
+# Football Field Booking Website
+The Football Field Booking Website is a website that allows users to easily reserve football fields for their matches. This website provides a convenient way to book available fields.
 
-## Giới thiệu
-Trang web Thuê Sân Bóng cung cấp dịch vụ đặt sân bóng nhân tạo trực tuyến, giúp người chơi dễ dàng tìm và đặt sân theo thời gian và vị trí mong muốn.
+## Prerequisites
+Before you get started with this project, make sure you have the following prerequisites in place:
+1. Java Development Kit (JDK): You need to have Java installed on your system. You can download it from Oracle's website.
+2. MySQL Database (version 8.0.32 or higher): You will need a MySQL database to store field availability and booking data. Install MySQL from the official MySQL website.
+3. Apache Tomcat (version 9.0.71 or higher): Tomcat is used as the web server for this project. Download Tomcat from the Apache Tomcat website.
 
-## Chức năng chính
-- Xem thông tin chi tiết về sân, bao gồm giá cả, tiện ích và hình ảnh.
-- Đặt sân trực tuyến.
+## Installation
+1. Clone this repository to your local machine
+2. Import the project into your preferred Java IDE (e.g., Eclipse, IntelliJ IDEA).
+3. Build the project.
+4. Deploy the project to Apache Tomcat.
+5. Start the Tomcat server.
 
-## Cấu hình
-- Server: tomcat 9.0.71
-- mysql-connector-j-8.0.32
+## Usage
+Once you have successfully deployed the project, you can start using it:
+Browse available football fields, check their availability, and make bookings.
 
-## Cơ sở dữ liệu
-create database footballfielddb;
-
-use footballfielddb;
-
-CREATE TABLE `football_field` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(500) NOT NULL,
-  `address` varchar(500) NOT NULL,
-  `contact` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-);
-
-INSERT INTO `footballfielddb`.`football_field`
-(`name`,
-`address`,
-`contact`)
-VALUES
-('Sân bóng nhân tạo Trung Hòa','Ngõ 55-57, đường Trần Phú, Hà Đông (trong trường Đại học Nghệ thuật Trung ương)','0962332538 - Anh Hoàng'),
-('Sân bóng Đại học Y Hà Nội','Trường Đại học Y Hà Nội, Khương Thượng, Đống Đa, Hà Nội','085.865.8899'),
-('Sân bóng Đại Bách khoa Hà Nội','A1 Lê Thanh Nghị, Bách Khoa, Hai Bà Trưng, Hà Nội','090.479.5885');
-
-CREATE TABLE `service` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `uniform` int NOT NULL,
-  `referee` int NOT NULL,
-  `field_id` int NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `service_field_id_fk_idx` (`field_id`),
-  CONSTRAINT `service_field_id_fk` FOREIGN KEY (`field_id`) REFERENCES `football_field` (`id`)
-);
-
-INSERT INTO `footballfielddb`.`service`
-(`uniform`,
-`referee`,
-`field_id`)
-VALUES
-(300000,200000,1),
-(310000,210000,2),
-(320000,220000,3);
-
-CREATE TABLE `time_slot` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `06$00_16$00` int NOT NULL,
-  `16$00_17$30` int NOT NULL,
-  `17$30_20$30` int NOT NULL,
-  `20$30_22$00` int NOT NULL,
-  `field_id` int NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `field_id_fk_idx` (`field_id`),
-  CONSTRAINT `field_id_fk` FOREIGN KEY (`field_id`) REFERENCES `football_field` (`id`)
-);
-
-INSERT INTO `footballfielddb`.`time_slot`
-(`06$00_16$00`,
-`16$00_17$30`,
-`17$30_20$30`,
-`20$30_22$00`,
-`field_id`)
-VALUES
-(300000,600000,800000,400000,1),
-(450000,500000,650000,500000,2),
-(400000,600000,800000,600000,3);
-
-CREATE TABLE `customer_order` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `customer_name` varchar(200) NOT NULL,
-  `phone` varchar(45) NOT NULL,
-  `number_team` int NOT NULL,
-  `number_player` int NOT NULL,
-  `times` double NOT NULL,
-  `time_slot_fee` int NOT NULL,
-  `uniform_fee` int NOT NULL DEFAULT '0',
-  `referee_fee` int NOT NULL DEFAULT '0',
-  `periodic` varchar(100) NOT NULL DEFAULT 'Không',
-  `field_id` int NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `customer_field_id_idx` (`field_id`),
-  CONSTRAINT `customer_field_id` FOREIGN KEY (`field_id`) REFERENCES `football_field` (`id`)
-);
+## How to Contribute
+We welcome contributions to the Football Field Booking Website project. To contribute, follow these steps:
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine.
+3. Make your changes or add new features.
+4. Test your changes thoroughly.
+5. Commit your changes and push them to your fork on GitHub.
+6. Create a pull request from your fork to the original repository.
+7. Describe your changes and why they should be merged.
+8. Your pull request will be reviewed, and once approved, it will be merged into the main project.
