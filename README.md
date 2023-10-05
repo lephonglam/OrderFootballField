@@ -1,5 +1,5 @@
 # Football Field Booking Website
-The Football Field Booking Website is a website that allows users to easily reserve football fields for their matches. This website provides a convenient way to book available fields.
+The Football Field Booking Website is a platform that allows users to easily reserve football fields for their matches. This website provides a convenient way to book available fields.
 
 ## Prerequisites
 Before you get started with this project, make sure you have the following prerequisites in place:
